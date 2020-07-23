@@ -79,6 +79,7 @@ public class AppController {
     public String getdets(@RequestParam("source") String source,
                           @RequestParam("destination") String destination, HttpServletRequest req) {
         System.out.println(source + ' ' + destination);
-        return "OK";
+        return source + ' ' + destination;
     }
+
 }
